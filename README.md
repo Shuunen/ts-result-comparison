@@ -1,5 +1,7 @@
 # Typescript Result Comparison
 
+[![Project license](https://img.shields.io/github/license/Shuunen/ts-result-comparison.svg?color=informational)](https://github.com/Shuunen/ts-result-comparison/blob/master/LICENSE)
+
 > Compare libraries that ease the Result pattern usage in Typescript
 
 - [Typescript Result Comparison](#typescript-result-comparison)
@@ -9,6 +11,9 @@
   - [The comparison results](#the-comparison-results)
   - [My favorite pick](#my-favorite-pick)
   - [How to contribute](#how-to-contribute)
+  - [Thanks](#thanks)
+  - [Stargazers over time](#stargazers-over-time)
+  - [Page views](#page-views)
 
 ## The result pattern
 
@@ -34,9 +39,9 @@ Make sure you have Node.js and [Bun](bun.sh) then :
 # install the dependencies
 bun install
 # run each file once just to verify that everything is working as expected
-bun run bench --runs 1
+bun bench --runs 1
 # run the benchmarks
-bun run bench --runs 50
+bun bench --runs 50
 ```
 
 Every script is taking between 79 ms (vanilla-object) and 85 ms (resultx), the difference is so small that it's not worth mentioning in the comparison table.
@@ -85,3 +90,21 @@ There are many ways to contribute to this project :
 - Whatever you think that could be useful
 
 Just open an issue or a PR, I'll be happy to discuss it with you <3
+
+## Thanks
+
+- [Bun](https://bun.sh) : for their great tool to do almost everything ^^
+- [FluentTypeResults](https://github.com/JasonLandbridge/FluentTypeResults) : for the library
+- [Github](https://github.com) : for all their great work year after year, pushing OSS forward
+- [Repo-checker](https://github.com/Shuunen/repo-checker) : eslint cover /src code and this tool the rest ^^
+- [ResultX](https://github.com/johannschopplich/resultx) : for the library
+- [Shields.io](https://shields.io) : for the nice badges on top of this readme
+- [Typescript Result](https://github.com/everweij/typescript-result) : for the library
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Shuunen/ts-result-comparison.svg?variant=adaptive)](https://starchart.cc/Shuunen/ts-result-comparison)
+
+## Page views
+
+[![Free Website Counter](https://www.websitecounterfree.com/c.php?d=9&id=65340&s=12)](https://www.websitecounterfree.com)

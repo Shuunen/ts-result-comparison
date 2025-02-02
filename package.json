@@ -1,19 +1,44 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
+  "bugs": "https://github.com/Shuunen/ts-result-comparison/issues",
   "dependencies": {
-    "@tsconfig/strictest": "latest",
-    "@types/bun": "latest",
-    "fluent-type-results": "latest",
-    "resultx": "latest",
-    "typescript-result": "latest"
+    "@types/bun": "1.2",
+    "fluent-type-results": "1.0",
+    "resultx": "2.0",
+    "typescript-result": "3.1"
   },
+  "description": "Comparison of different TypeScript result pattern libraries",
+  "devDependencies": {
+    "@tsconfig/strictest": "2.0",
+    "repo-check": "1.40",
+    "typescript": "5.7"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/Shuunen/ts-result-comparison#readme",
+  "keywords": [
+    "shuunen",
+    "typescript",
+    "result",
+    "pattern",
+    "comparison"
+  ],
   "license": "MIT",
   "name": "ts-result-comparison",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shuunen/ts-result-comparison.git"
+  },
   "scripts": {
-    "build": "bun scripts/build.ts",
     "bench": "hyperfine 'bun src/resultx.ts' 'bun src/vanilla-throw.ts' 'bun src/vanilla-object.ts' 'bun src/fluent-type-results.ts' 'bun src/typescript-result.ts'",
-    "bench:node": "hyperfine 'node dist/resultx.js' 'node dist/vanilla-throw.js' 'node dist/vanilla-object.js' 'node dist/fluent-type-results.js' 'node dist/typescript-result.js'"
+    "bench:node": "hyperfine 'node dist/resultx.js' 'node dist/vanilla-throw.js' 'node dist/vanilla-object.js' 'node dist/fluent-type-results.js' 'node dist/typescript-result.js' && echo bench:node success",
+    "build": "bun scripts/build.ts && echo build success",
+    "check": "repo-check && bun check:tsc && bun run build && bun check:once && echo check success",
+    "check:once": "bun bench --runs 1 && echo check:once success",
+    "check:tsc": "tsc --noEmit && echo check:tsc success"
   },
   "type": "module",
   "version": "1.0.0"
