@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
+  "dependencies": {
+    "@tsconfig/strictest": "latest",
+    "@types/bun": "latest",
+    "fluent-type-results": "latest",
+    "resultx": "latest",
+    "typescript-result": "latest"
+  },
+  "license": "MIT",
+  "name": "ts-result-comparison",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "bench": "hyperfine 'bun src/resultx.ts' 'bun src/vanilla-throw.ts' 'bun src/vanilla-object.ts' 'bun src/fluent-type-results.ts' 'bun src/typescript-result.ts'",
+    "bench:node": "hyperfine 'node dist/resultx.js' 'node dist/vanilla-throw.js' 'node dist/vanilla-object.js' 'node dist/fluent-type-results.js' 'node dist/typescript-result.js'"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "declaration": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "ESNext"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "include": [
+    "src"
+  ]
+}
