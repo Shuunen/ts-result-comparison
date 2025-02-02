@@ -47,22 +47,22 @@ When running the benchmarks with Node on the built files, the results are even c
 
 Here are the library used in this comparison :
 
-- [fluent-type-results](https://github.com/JasonLandbridge/FluentTypeResults) from Jason Landbridge
-- [resultx](https://github.com/johannschopplich/resultx) from Johann Schopplich
-- [typescript-result](https://github.com/everweij/typescript-result) from Erik Verweij
+- [fluent-type-results](https://github.com/JasonLandbridge/FluentTypeResults) v1.0.11 from Jason Landbridge
+- [resultx](https://github.com/johannschopplich/resultx) v2.0.2 from Johann Schopplich
+- [typescript-result](https://github.com/everweij/typescript-result) v3.1.1 from Erik Verweij
 
-| Date       | Score |          Library           | Deps  | Build size | Light | A typed | B typed | C typed | Async | Align |
-| ---------- | :---: | :------------------------: | :---: | :--------: | :---: | :-----: | :-----: | :-----: | :---: | :---: |
-| 2025-02-02 |  1.5  | fluent-type-results 1.0.11 |   0   |   3729 B   |   0   |    0    |  **1**  |   0.5   |   0   |   0   |
-| 2025-02-02 | **8** |       resultx 2.0.2        |   0   |   938 B    | **2** |  **1**  |  **2**  |  **1**  | **1** | **1** |
-| 2025-02-02 |   5   |  typescript-result 3.1.1   |   0   |   5807 B   |   0   |  **1**  |  **1**  |  **1**  | **1** | **1** |
-| 2025-02-02 |   6   |       vanilla-object       |   0   |   666 B    | **2** |  **1**  |  **2**  |  **1**  |   0   |   0   |
-| 2025-02-02 |   4   |       vanilla-throw        |   0   |   641 B    | **2** |  **1**  |    0    |  **1**  |   0   |   0   |
+| Date       | Score |       Library       | Deps  |  Size  | Light | A typed | B typed | C typed | Async | Align |
+| ---------- | :---: | :-----------------: | :---: | :----: | :---: | :-----: | :-----: | :-----: | :---: | :---: |
+| 2025-02-02 |  1.5  | fluent-type-results |   0   | 3729 B |   0   |    0    |  **1**  |   0.5   |   0   |   0   |
+| 2025-02-02 | **8** |       resultx       |   0   | 938 B  | **2** |  **1**  |  **2**  |  **1**  | **1** | **1** |
+| 2025-02-02 |   5   |  typescript-result  |   0   | 5807 B |   0   |  **1**  |  **1**  |  **1**  | **1** | **1** |
+| 2025-02-02 |   6   |   vanilla-object    |   0   | 666 B  | **2** |  **1**  |  **2**  |  **1**  |   0   |   0   |
+| 2025-02-02 |   4   |    vanilla-throw    |   0   | 641 B  | **2** |  **1**  |    0    |  **1**  |   0   |   0   |
 
 Legend :
 
 - Deps : 1 point removed for each library dependency
-- Build size : the minified size in bytes (run  `bun run build`)
+- Size : the minified build size in bytes of the related file in `src`, run  `bun run build` to see by yourself
 - Light : 1 point if the build is less than 2000 B, 1 bonus point if it's less than 1000 B
 - A typed : 1 point if hovering `resultA.value` gives `number`
 - B typed : 1 point if hovering `resultB.error` gives the type of the error, could be `string`, `string[]`, `Error`. Another 1 point if we see the literal error message.
