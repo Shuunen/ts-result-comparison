@@ -11,7 +11,7 @@
   "description": "Comparison of different TypeScript result pattern libraries",
   "devDependencies": {
     "@tsconfig/strictest": "2.0",
-    "repo-check": "1.40",
+    "repo-check": "1.43",
     "typescript": "5.8"
   },
   "files": [
