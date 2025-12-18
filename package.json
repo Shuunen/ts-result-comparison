@@ -3,7 +3,7 @@
   "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
   "bugs": "https://github.com/Shuunen/ts-result-comparison/issues",
   "dependencies": {
-    "@types/bun": "1.2",
+    "@types/bun": "1.3",
     "fluent-type-results": "1.0",
     "resultx": "2.0",
     "typescript-result": "3.1"
