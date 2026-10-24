@@ -33,15 +33,15 @@ Ideally you can use this comparison to choose the library that fits your needs t
 
 ## Run tests and benchmarks
 
-Make sure you have Node.js and [Bun](bun.sh) then :
+Make sure you have Node.js, [pnpm](https://pnpm.io) and [Bun](https://bun.sh) (only used to run the scripts) then :
 
 ```bash
 # install the dependencies
-bun install
+pnpm install
 # run each file once just to verify that everything is working as expected
-bun bench --runs 1
+pnpm bench --runs 1
 # run the benchmarks
-bun bench --runs 50
+pnpm bench --runs 50
 ```
 
 Every script is taking between 79 ms (vanilla-object) and 85 ms (resultx), the difference is so small that it's not worth mentioning in the comparison table.
@@ -67,7 +67,7 @@ Here are the library used in this comparison :
 Legend :
 
 - Deps : 1 point removed for each library dependency
-- Size : the minified build size in bytes of the related file in `src`, run  `bun run build` to see by yourself
+- Size : the minified build size in bytes of the related file in `src`, run  `pnpm build` to see by yourself
 - Light : 1 point if the build is less than 2000 B, 1 bonus point if it's less than 1000 B
 - A typed : 1 point if hovering `resultA.value` gives `number`
 - B typed : 1 point if hovering `resultB.error` gives the type of the error, could be `string`, `string[]`, `Error`. Another 1 point if we see the literal error message.

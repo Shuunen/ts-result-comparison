@@ -7,7 +7,7 @@
       "ESNext"
     ],
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "noImplicitThis": true,
     "outDir": "./dist",
@@ -16,6 +16,7 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "ESNext",
+    "types": ["bun"],
     "verbatimModuleSyntax": true
   },
   "exclude": [
