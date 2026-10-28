@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "name": "ts-result-comparison",
-  "packageManager": "pnpm@12.15.0",
+  "packageManager": "pnpm@12.16.1",
   "private": true,
   "repository": {
     "type": "git",
