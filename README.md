@@ -1,6 +1,9 @@
 # Typescript Result Comparison
 
 [![Project license](https://img.shields.io/github/license/Shuunen/ts-result-comparison.svg?color=informational)](https://github.com/Shuunen/ts-result-comparison/blob/master/LICENSE)
+[![Visitors](https://hits.sh/github.com/Shuunen/ts-result-comparison.svg?label=visitors&color=informational)](https://hits.sh/github.com/Shuunen/ts-result-comparison/)
+
+![logo](docs/banner.svg)
 
 > Compare libraries that ease the Result pattern usage in Typescript
 
@@ -52,17 +55,21 @@ When running the benchmarks with Node on the built files, the results are even c
 
 Here are the library used in this comparison :
 
+- [@praha/byethrow](https://github.com/praha-inc/byethrow) v0.13.0 from PrAha, Inc.
 - [fluent-type-results](https://github.com/JasonLandbridge/FluentTypeResults) v1.0.11 from Jason Landbridge
+- [neverthrow](https://github.com/supermacro/neverthrow) v8.2.0 from Giorgio Delgado
 - [resultx](https://github.com/johannschopplich/resultx) v2.0.2 from Johann Schopplich
-- [typescript-result](https://github.com/everweij/typescript-result) v3.1.1 from Erik Verweij
+- [typescript-result](https://github.com/everweij/typescript-result) v3.5.2 from Erik Verweij
 
 | Date       | Score |       Library       | Deps  |  Size  | Light | A typed | B typed | C typed | Async | Align |
 | ---------- | :---: | :-----------------: | :---: | :----: | :---: | :-----: | :-----: | :-----: | :---: | :---: |
-| 2025-02-02 |  1.5  | fluent-type-results |   0   | 3729 B |   0   |    0    |  **1**  |   0.5   |   0   |   0   |
-| 2025-02-02 | **8** |       resultx       |   0   | 938 B  | **2** |  **1**  |  **2**  |  **1**  | **1** | **1** |
-| 2025-02-02 |   5   |  typescript-result  |   0   | 5807 B |   0   |  **1**  |  **1**  |  **1**  | **1** | **1** |
-| 2025-02-02 |   6   |   vanilla-object    |   0   | 666 B  | **2** |  **1**  |  **2**  |  **1**  |   0   |   0   |
-| 2025-02-02 |   4   |    vanilla-throw    |   0   | 641 B  | **2** |  **1**  |    0    |  **1**  |   0   |   0   |
+| 2026-11-06 |   5   |  @praha/byethrow    |  -1   | 1308 B |   1   |  **1**  |  **2**  |  **1**  | **1** |   0   |
+| 2026-11-06 |  1.5  | fluent-type-results |   0   | 3989 B |   0   |    0    |  **1**  |   0.5   |   0   |   0   |
+| 2026-11-06 |   5   |     neverthrow      |   0   | 7331 B |   0   |  **1**  |  **2**  |  **1**  | **1** |   0   |
+| 2026-11-06 | **8** |       resultx       |   0   | 938 B  | **2** |  **1**  |  **2**  |  **1**  | **1** | **1** |
+| 2026-11-06 |   5   |  typescript-result  |   0   | 8046 B |   0   |  **1**  |  **1**  |  **1**  | **1** | **1** |
+| 2026-11-06 |   6   |   vanilla-object    |   0   | 666 B  | **2** |  **1**  |  **2**  |  **1**  |   0   |   0   |
+| 2026-11-06 |   4   |    vanilla-throw    |   0   | 637 B  | **2** |  **1**  |    0    |  **1**  |   0   |   0   |
 
 Legend :
 
@@ -93,18 +100,17 @@ Just open an issue or a PR, I'll be happy to discuss it with you <3
 
 ## Thanks
 
-- [Bun](https://bun.sh) : for their great tool to do almost everything ^^
+- [Boxy Svg](https://boxy-svg.com) : simple & effective svg editor
+- [Bun](https://bun.sh) : super fast runtime for JavaScript and TypeScript
 - [FluentTypeResults](https://github.com/JasonLandbridge/FluentTypeResults) : for the library
 - [Github](https://github.com) : for all their great work year after year, pushing OSS forward
+- [Knip](https://github.com/webpro/knip) : super tool to find & fix problems
 - [Repo-checker](https://github.com/Shuunen/repo-checker) : eslint cover /src code and this tool the rest ^^
 - [ResultX](https://github.com/johannschopplich/resultx) : for the library
 - [Shields.io](https://shields.io) : for the nice badges on top of this readme
+- [Svg Omg](https://jakearchibald.github.io/svgomg/) : the great king of svg file size reduction
 - [Typescript Result](https://github.com/everweij/typescript-result) : for the library
+- [V8](https://github.com/demurgos/v8-coverage) : simple & effective cli for code coverage
+- [Vitest](https://github.com/vitest-dev/vitest) : super fast vite-native testing framework
 
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/Shuunen/ts-result-comparison.svg?variant=adaptive)](https://starchart.cc/Shuunen/ts-result-comparison)
-
-## Page views
-
-[![Free Website Counter](https://www.websitecounterfree.com/c.php?d=9&id=65340&s=12)](https://www.websitecounterfree.com)
+![demo](docs/banner.svg)
