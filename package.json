@@ -3,16 +3,22 @@
   "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
   "bugs": "https://github.com/Shuunen/ts-result-comparison/issues",
   "dependencies": {
+    "@praha/byethrow": "^0.13.0",
     "@types/bun": "~1.4.4",
     "fluent-type-results": "~1.0.11",
+    "neverthrow": "^8.2.0",
     "resultx": "~2.0.2",
     "typescript-result": "~3.5.2"
   },
   "description": "Comparison of different TypeScript result pattern libraries",
   "devDependencies": {
     "@tsconfig/strictest": "~2.0.8",
-    "repo-check": "^1.46.0",
-    "typescript": "~7.0.2"
+    "@vitest/coverage-v8": "~5.1.0",
+    "bun": "~1.4.4",
+    "knip": "~6.44.1",
+    "repo-check": "2.0.0-rc.1",
+    "typescript": "~7.0.2",
+    "vitest": "~5.1.0"
   },
   "files": [
     "dist"
@@ -34,12 +40,14 @@
     "url": "git+https://github.com/Shuunen/ts-result-comparison.git"
   },
   "scripts": {
-    "bench": "hyperfine 'bun src/resultx.ts' 'bun src/vanilla-throw.ts' 'bun src/vanilla-object.ts' 'bun src/fluent-type-results.ts' 'bun src/typescript-result.ts'",
-    "bench:node": "hyperfine 'node dist/resultx.js' 'node dist/vanilla-throw.js' 'node dist/vanilla-object.js' 'node dist/fluent-type-results.js' 'node dist/typescript-result.js' && echo bench:node success",
+    "bench": "hyperfine \"bun src/resultx.ts\" \"bun src/vanilla-throw.ts\" \"bun src/vanilla-object.ts\" \"bun src/fluent-type-results.ts\" \"bun src/typescript-result.ts\" \"bun src/neverthrow.ts\" \"bun src/byethrow.ts\"",
+    "bench:node": "hyperfine \"node dist/resultx.js\" \"node dist/vanilla-throw.js\" \"node dist/vanilla-object.js\" \"node dist/fluent-type-results.js\" \"node dist/typescript-result.js\" \"node dist/neverthrow.js\" \"node dist/byethrow.js\" && echo bench:node success",
     "build": "bun scripts/build.ts && echo build success",
     "check": "repo-check && pnpm check:tsc && pnpm build && pnpm check:once && echo check success",
     "check:once": "pnpm bench --runs 1 && echo check:once success",
-    "check:tsc": "tsc --noEmit && echo check:tsc success"
+    "check:tsc": "tsc --noEmit && echo check:tsc success",
+    "lint:knip": "knip && echo lint:knip success",
+    "test": "vitest --run --coverage && echo test success"
   },
   "type": "module",
   "version": "1.0.0"
