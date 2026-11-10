@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" role="img" aria-label="Result comparison demo: five Typescript Result libraries scored side by side">
+<title>Result comparison demo: five Typescript Result libraries scored side by side</title>
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre}
+
+@keyframes k0{0%,8%{transform:scaleX(0)}20%,96%{transform:scaleX(1)}98%,100%{transform:scaleX(0)}}.k0{animation:k0 12s infinite ease-in-out both}
+@keyframes k1{0%,20%{opacity:0}20.8%,96%{opacity:1}98%,100%{opacity:0}}.k1{animation:k1 12s infinite ease-in-out both}
+@keyframes k2{0%,14%{transform:scaleX(0)}26%,96%{transform:scaleX(1)}98%,100%{transform:scaleX(0)}}.k2{animation:k2 12s infinite ease-in-out both}
+@keyframes k3{0%,26%{opacity:0}26.8%,96%{opacity:1}98%,100%{opacity:0}}.k3{animation:k3 12s infinite ease-in-out both}
+@keyframes k4{0%,20%{transform:scaleX(0)}32%,96%{transform:scaleX(1)}98%,100%{transform:scaleX(0)}}.k4{animation:k4 12s infinite ease-in-out both}
+@keyframes k5{0%,32%{opacity:0}32.8%,96%{opacity:1}98%,100%{opacity:0}}.k5{animation:k5 12s infinite ease-in-out both}
+@keyframes k6{0%,26%{transform:scaleX(0)}38%,96%{transform:scaleX(1)}98%,100%{transform:scaleX(0)}}.k6{animation:k6 12s infinite ease-in-out both}
+@keyframes k7{0%,38%{opacity:0}38.8%,96%{opacity:1}98%,100%{opacity:0}}.k7{animation:k7 12s infinite ease-in-out both}
+@keyframes k8{0%,32%{transform:scaleX(0)}44%,96%{transform:scaleX(1)}98%,100%{transform:scaleX(0)}}.k8{animation:k8 12s infinite ease-in-out both}
+@keyframes k9{0%,44%{opacity:0}44.8%,96%{opacity:1}98%,100%{opacity:0}}.k9{animation:k9 12s infinite ease-in-out both}
+@keyframes k10{0%,52%{opacity:0}52.8%,96%{opacity:1}98%,100%{opacity:0}}.k10{animation:k10 12s infinite ease-in-out both}
+@keyframes k11{0%,56%{opacity:0}56.8%,96%{opacity:1}98%,100%{opacity:0}}.k11{animation:k11 12s infinite ease-in-out both}
+</style>
+<rect width="900" height="460" rx="16" fill="#1a1029"/>
+<text x="40" y="56" fill="#f3e8ff" font-size="26" font-weight="700">Typescript Result Comparison</text>
+<text x="40" y="84" fill="#c084fc" font-size="14">score out of 10, lighter and better typed is better</text>
+<text x="40" y="150" fill="#e9e5ff" font-size="16" font-weight="600">resultx</text>
+<rect x="250" y="128" width="480" height="32" rx="8" fill="#2e1f4d"/>
+<g transform="translate(250,128)"><g class="k0" style="transform-box:fill-box;transform-origin:left center"><rect x="0" y="0" width="384" height="32" rx="8" fill="#a78bfa"/></g></g>
+<g class="k1" ><text x="644" y="151" fill="#f3e8ff" font-size="17" font-weight="700">8</text></g>
+<text x="860" y="150" class="m" fill="#c4b5fd" font-size="14" text-anchor="end">938 B</text>
+<text x="40" y="212" fill="#e9e5ff" font-size="16" font-weight="600">@praha/byethrow</text>
+<rect x="250" y="190" width="480" height="32" rx="8" fill="#2e1f4d"/>
+<g transform="translate(250,190)"><g class="k2" style="transform-box:fill-box;transform-origin:left center"><rect x="0" y="0" width="240" height="32" rx="8" fill="#7c3aed"/></g></g>
+<g class="k3" ><text x="500" y="213" fill="#f3e8ff" font-size="17" font-weight="700">5</text></g>
+<text x="860" y="212" class="m" fill="#c4b5fd" font-size="14" text-anchor="end">1308 B</text>
+<text x="40" y="274" fill="#e9e5ff" font-size="16" font-weight="600">neverthrow</text>
+<rect x="250" y="252" width="480" height="32" rx="8" fill="#2e1f4d"/>
+<g transform="translate(250,252)"><g class="k4" style="transform-box:fill-box;transform-origin:left center"><rect x="0" y="0" width="240" height="32" rx="8" fill="#7c3aed"/></g></g>
+<g class="k5" ><text x="500" y="275" fill="#f3e8ff" font-size="17" font-weight="700">5</text></g>
+<text x="860" y="274" class="m" fill="#c4b5fd" font-size="14" text-anchor="end">7331 B</text>
+<text x="40" y="336" fill="#e9e5ff" font-size="16" font-weight="600">typescript-result</text>
+<rect x="250" y="314" width="480" height="32" rx="8" fill="#2e1f4d"/>
+<g transform="translate(250,314)"><g class="k6" style="transform-box:fill-box;transform-origin:left center"><rect x="0" y="0" width="240" height="32" rx="8" fill="#7c3aed"/></g></g>
+<g class="k7" ><text x="500" y="337" fill="#f3e8ff" font-size="17" font-weight="700">5</text></g>
+<text x="860" y="336" class="m" fill="#c4b5fd" font-size="14" text-anchor="end">8046 B</text>
+<text x="40" y="398" fill="#e9e5ff" font-size="16" font-weight="600">fluent-type-results</text>
+<rect x="250" y="376" width="480" height="32" rx="8" fill="#2e1f4d"/>
+<g transform="translate(250,376)"><g class="k8" style="transform-box:fill-box;transform-origin:left center"><rect x="0" y="0" width="72" height="32" rx="8" fill="#5b3fa8"/></g></g>
+<g class="k9" ><text x="332" y="399" fill="#f3e8ff" font-size="17" font-weight="700">1.5</text></g>
+<text x="860" y="398" class="m" fill="#c4b5fd" font-size="14" text-anchor="end">3989 B</text>
+<g class="k10" ><rect stroke-width="3" x="32" y="112" width="836" height="52" rx="12" fill="none" stroke="#a78bfa"/></g>
+<g class="k11" ><text x="450" y="445" fill="#d8b4fe" font-size="20" font-weight="700" text-anchor="middle">🏆 my favorite pick : resultx</text></g>
+</svg>

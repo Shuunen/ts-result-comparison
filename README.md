@@ -8,6 +8,7 @@
 > Compare libraries that ease the Result pattern usage in Typescript
 
 - [Typescript Result Comparison](#typescript-result-comparison)
+  - [Demo](#demo)
   - [The result pattern](#the-result-pattern)
   - [The goal of this project](#the-goal-of-this-project)
   - [Run tests and benchmarks](#run-tests-and-benchmarks)
@@ -15,8 +16,10 @@
   - [My favorite pick](#my-favorite-pick)
   - [How to contribute](#how-to-contribute)
   - [Thanks](#thanks)
-  - [Stargazers over time](#stargazers-over-time)
-  - [Page views](#page-views)
+
+## Demo
+
+![demo](docs/demo.svg)
 
 ## The result pattern
 
