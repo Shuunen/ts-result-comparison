@@ -1,3 +1,5 @@
 allowBuilds:
   bun: true
   hyperfine: true
+minimumReleaseAgeExclude:
+  - knip@6.45.0
