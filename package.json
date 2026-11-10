@@ -15,7 +15,7 @@
     "@tsconfig/strictest": "~2.0.8",
     "@vitest/coverage-v8": "~5.1.0",
     "bun": "~1.4.4",
-    "knip": "~6.44.1",
+    "knip": "~6.45.0",
     "repo-check": "2.0.0-rc.1",
     "typescript": "~7.0.2",
     "vitest": "~5.1.0"
