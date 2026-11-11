@@ -1,25 +1,29 @@
-import { Glob } from "bun"
+import { build, file, Glob } from 'bun'
 
-const glob = new Glob("*.ts")
-const ignore = ['utils.ts']
+const glob = new Glob('*.ts')
+const ignore = new Set(['utils.ts'])
 const outdir = './dist'
-const nameRegex = /dist[\/\\](?<name>[\w-]+)/
+const nameColumnWidth = 20
+const nameRegex = /dist[/\\](?<name>[\w-]+)/u
 
-function showFileSize (path: string) {
+function showFileSize(path: string) {
   const name = nameRegex.exec(path)?.groups?.name
   if (!name) throw new Error(`Failed to extract name from ${path}`)
-  const stats = Bun.file(path)
-  console.log(name.padStart(20), stats.size, 'bytes')
+  const stats = file(path)
+  console.log(name.padStart(nameColumnWidth), stats.size, 'bytes')
 }
 
-function build (file: string) {
-  const entrypoints = [`./src/${file}`]
-  Bun.build({ entrypoints, outdir, minify: true }).then((data) => {
+async function buildFile(name: string) {
+  const entrypoints = [`./src/${name}`]
+  try {
+    const data = await build({ entrypoints, minify: true, outdir })
     showFileSize(data.outputs[0].path)
-  }).catch((err) => { console.error('Build failed:', err) })
+  } catch (error: unknown) {
+    console.error('Build failed:', error)
+  }
 }
 
-for await (const file of glob.scan("./src")) {
-  if (ignore.includes(file)) continue
-  build(file)
+for await (const name of glob.scan('./src')) {
+  if (ignore.has(name)) continue
+  await buildFile(name)
 }

@@ -1,0 +1,224 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "nursery": "warn",
+    "pedantic": "warn",
+    "perf": "warn",
+    "restriction": "warn",
+    "style": "warn",
+    "suspicious": "warn"
+  },
+  "globals": {
+    "atob": "readonly",
+    "Blob": "readonly",
+    "btoa": "readonly",
+    "clearInterval": "readonly",
+    "clearTimeout": "readonly",
+    "console": "readonly",
+    "crypto": "readonly",
+    "document": "readonly",
+    "DOMParser": "readonly",
+    "Element": "readonly",
+    "Event": "readonly",
+    "fetch": "readonly",
+    "File": "readonly",
+    "FileReader": "readonly",
+    "FormData": "readonly",
+    "Headers": "readonly",
+    "HTMLButtonElement": "readonly",
+    "HTMLCollection": "readonly",
+    "HTMLElement": "readonly",
+    "HTMLInputElement": "readonly",
+    "KeyboardEvent": "readonly",
+    "localStorage": "readonly",
+    "Node": "readonly",
+    "NodeList": "readonly",
+    "process": "readonly",
+    "setInterval": "readonly",
+    "setTimeout": "readonly",
+    "structuredClone": "readonly",
+    "TextDecoder": "readonly",
+    "TextEncoder": "readonly",
+    "URL": "readonly",
+    "window": "readonly",
+    "navigator": "readonly",
+    "globalThis": "readonly",
+    "location": "readonly",
+    "history": "readonly",
+    "MutationObserver": "readonly",
+    "ClipboardItem": "readonly",
+    "CustomEvent": "readonly",
+    "HTMLStyleElement": "readonly",
+    "getComputedStyle": "readonly",
+    "requestAnimationFrame": "readonly",
+    "cookieStore": "readonly"
+  },
+  "ignorePatterns": [".git", ".old", "*.d.ts", "coverage", "dist", "node_modules"],
+  "overrides": [
+    {
+      "files": ["src/**/*.ts"],
+      "rules": {
+        "id-length": "off",
+        "new-cap": "off",
+        "no-nodejs-modules": "off",
+        "no-magic-numbers": "off",
+        "prefer-top-level-await": "off",
+        "sort-keys": "off"
+      }
+    },
+    {
+      "files": ["src/index.ts"],
+      "rules": {
+        "oxc/no-barrel-file": "off"
+      }
+    },
+    {
+      "files": ["src/bin/**/*.ts", "*.config.ts", "vitest.setup.ts"],
+      "rules": {
+        "no-default-export": "off",
+        "no-nodejs-modules": "off",
+        "require-hook": "off",
+        "no-magic-numbers": "off"
+      }
+    },
+    {
+      "files": ["**/*.test.{js,ts,tsx}", "vite.config.ts", "**/*.mock.ts"],
+      "globals": {
+        "afterAll": "readonly",
+        "afterEach": "readonly",
+        "assert": "readonly",
+        "beforeAll": "readonly",
+        "beforeEach": "readonly",
+        "describe": "readonly",
+        "expect": "readonly",
+        "expectTypeOf": "readonly",
+        "it": "readonly",
+        "mock": "readonly",
+        "test": "readonly",
+        "vi": "readonly"
+      },
+      "rules": {
+        "max-lines": "off",
+        "max-lines-per-function": "off",
+        "max-nested-callbacks": "off",
+        "max-statements": "off",
+        "no-magic-numbers": "off",
+        "no-nodejs-modules": "off",
+        "prefer-describe-function-title": "off",
+        "prefer-ending-with-an-expect": "off",
+        "prefer-importing-jest-globals": "off",
+        "unicorn/no-null": "off",
+        "vitest/no-conditional-expect": "off",
+        "vitest/no-conditional-in-test": "off",
+        "vitest/no-hooks": "off",
+        "vitest/prefer-expect-assertions": "off",
+        "vitest/prefer-lowercase-title": "off",
+        "vitest/valid-title": "off"
+      }
+    }
+  ],
+  "plugins": ["import", "jsdoc", "oxc", "promise", "typescript", "unicorn", "vitest"],
+  "rules": {
+    "array-type": "off",
+    "capitalized-comments": "off",
+    "consistent-indexed-object-style": "off",
+    "consistent-type-definitions": ["error", "type"],
+    "consistent-type-specifier-style": "off",
+    "curly": ["error", "multi"],
+    "explicit-function-return-type": "off",
+    "explicit-module-boundary-types": "off",
+    "exports-last": "off",
+    "extensions": ["error", "always", { "ignorePackages": true }],
+    "filename-case": [
+      "error",
+      {
+        "case": "kebabCase"
+      }
+    ],
+    "id-length": ["warn", { "exceptions": ["_"] }],
+    "func-style": [
+      "error",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "group-exports": "off",
+    "jsdoc/require-param-type": "off",
+    "jsdoc/require-returns-type": "off",
+    "max-dependencies": ["error", 30],
+    "max-statements": ["error", 20],
+    "no-async-await": "off",
+    "no-confusing-void-expression": "off",
+    "no-console": "off",
+    "no-continue": "off",
+    "no-default-export": "error",
+    "no-floating-promises": "off",
+    "no-inline-comments": "off",
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignore": [-1, 0, 1],
+        "ignoreClassFieldInitialValues": true,
+        "ignoreDefaultValues": true
+      }
+    ],
+    "no-map-spread": "off",
+    "no-misused-promises": "off",
+    "no-named-export": "off",
+    "no-optional-chaining": "off",
+    "no-relative-parent-imports": "off",
+    "no-rest-spread-properties": "off",
+    "no-ternary": "off",
+    "no-unassigned-import": "off",
+    "no-undefined": "off",
+    "no-unnecessary-condition": "off",
+    "no-unnecessary-type-arguments": "off",
+    "no-unsafe-assignment": "off",
+    "no-unsafe-member-access": "off",
+    "no-unsafe-type-assertion": "off",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "no-useless-assignment": "off",
+    "no-useless-undefined": "off",
+    "no-void": "off",
+    "no-warning-comments": "off",
+    "number-literal-case": "off",
+    "one-var": ["error", "never"],
+    "prefer-at": "error",
+    "prefer-default-export": "off",
+    "prefer-importing-vitest-globals": "off",
+    "prefer-nullish-coalescing": "off",
+    "prefer-readonly-parameter-types": "off",
+    "prefer-ternary": "off",
+    "promise-function-async": "off",
+    "require-test-timeout": "off",
+    "require-unicode-regexp": "off",
+    "restrict-template-expressions": "off",
+    "sort-imports": "off",
+    "strict-boolean-expressions": "off",
+    "strict-void-return": "off",
+    "switch-exhaustiveness-check": "off",
+    "unambiguous": "off",
+    "unicorn/prefer-spread": "off",
+    "vitest/prefer-called-times": "off",
+    "vitest/prefer-to-be-falsy": "off",
+    "vitest/prefer-to-be-truthy": "off",
+    "vitest/require-hook": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase"
+      }
+    ]
+  },
+  "options": {
+    "typeAware": true,
+    "typeCheck": true
+  }
+}

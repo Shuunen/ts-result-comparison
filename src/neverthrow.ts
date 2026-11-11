@@ -1,7 +1,7 @@
 import { err, ok, ResultAsync } from 'neverthrow'
-import { sleep } from './utils'
+import { sleep } from './utils.ts'
 
-function divide (a: number, b: number) {
+function divide(a: number, b: number) {
   if (b === 0) return err('Division by zero')
   return ok(a / b)
 }
@@ -14,7 +14,7 @@ const resultB = divide(10, 0)
 if (resultB.isErr()) console.assert(typeof resultB.error === 'string', 'Error should be a string')
 else console.assert(false, 'Case 2 should not exist', resultB)
 
-async function fetchUser (id: number) {
+async function fetchUser(id: number) {
   await sleep(10)
   return { id, name: 'Alice' }
 }

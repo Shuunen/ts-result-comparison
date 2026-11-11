@@ -1,7 +1,7 @@
 import Result from 'fluent-type-results'
-import { sleep } from './utils'
+import { sleep } from './utils.ts'
 
-function divide (a: number, b: number) {
+function divide(a: number, b: number) {
   if (b === 0) return Result.FailFromMsg('Division by zero')
   return Result.Ok(a / b)
 }
@@ -14,7 +14,7 @@ const resultB = divide(10, 0)
 if (resultB.isFailed) console.assert(Array.isArray(resultB.errors), 'Error 1 should be an array')
 else console.assert(false, 'Case 2 should not exist', resultB)
 
-async function fetchUser (id: number) {
+async function fetchUser(id: number) {
   await sleep(10)
   return Result.Ok({ id, name: 'Alice' })
 }

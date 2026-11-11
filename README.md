@@ -64,25 +64,25 @@ Here are the library used in this comparison :
 - [resultx](https://github.com/johannschopplich/resultx) v2.0.2 from Johann Schopplich
 - [typescript-result](https://github.com/everweij/typescript-result) v3.5.2 from Erik Verweij
 
-| Date       | Score |       Library       | Deps  |  Size  | Light | A typed | B typed | C typed | Async | Align |
-| ---------- | :---: | :-----------------: | :---: | :----: | :---: | :-----: | :-----: | :-----: | :---: | :---: |
-| 2026-11-06 |   5   |  @praha/byethrow    |  -1   | 1308 B |   1   |  **1**  |  **2**  |  **1**  | **1** |   0   |
-| 2026-11-06 |  1.5  | fluent-type-results |   0   | 3989 B |   0   |    0    |  **1**  |   0.5   |   0   |   0   |
-| 2026-11-06 |   5   |     neverthrow      |   0   | 7331 B |   0   |  **1**  |  **2**  |  **1**  | **1** |   0   |
-| 2026-11-06 | **8** |       resultx       |   0   | 938 B  | **2** |  **1**  |  **2**  |  **1**  | **1** | **1** |
-| 2026-11-06 |   5   |  typescript-result  |   0   | 8046 B |   0   |  **1**  |  **1**  |  **1**  | **1** | **1** |
-| 2026-11-06 |   6   |   vanilla-object    |   0   | 666 B  | **2** |  **1**  |  **2**  |  **1**  |   0   |   0   |
-| 2026-11-06 |   4   |    vanilla-throw    |   0   | 637 B  | **2** |  **1**  |    0    |  **1**  |   0   |   0   |
+| Date       | Score |       Library       | Deps |  Size  | Light | A typed | B typed | C typed | Async | Align |
+| ---------- | :---: | :-----------------: | :--: | :----: | :---: | :-----: | :-----: | :-----: | :---: | :---: |
+| 2026-11-06 |   5   |   @praha/byethrow   |  -1  | 1308 B |   1   |  **1**  |  **2**  |  **1**  | **1** |   0   |
+| 2026-11-06 |  1.5  | fluent-type-results |  0   | 3989 B |   0   |    0    |  **1**  |   0.5   |   0   |   0   |
+| 2026-11-06 |   5   |     neverthrow      |  0   | 7331 B |   0   |  **1**  |  **2**  |  **1**  | **1** |   0   |
+| 2026-11-06 | **8** |       resultx       |  0   | 938 B  | **2** |  **1**  |  **2**  |  **1**  | **1** | **1** |
+| 2026-11-06 |   5   |  typescript-result  |  0   | 8046 B |   0   |  **1**  |  **1**  |  **1**  | **1** | **1** |
+| 2026-11-06 |   6   |   vanilla-object    |  0   | 666 B  | **2** |  **1**  |  **2**  |  **1**  |   0   |   0   |
+| 2026-11-06 |   4   |    vanilla-throw    |  0   | 637 B  | **2** |  **1**  |    0    |  **1**  |   0   |   0   |
 
 Legend :
 
 - Deps : 1 point removed for each library dependency
-- Size : the minified build size in bytes of the related file in `src`, run  `pnpm build` to see by yourself
+- Size : the minified build size in bytes of the related file in `src`, run `pnpm build` to see by yourself
 - Light : 1 point if the build is less than 2000 B, 1 bonus point if it's less than 1000 B
 - A typed : 1 point if hovering `resultA.value` gives `number`
 - B typed : 1 point if hovering `resultB.error` gives the type of the error, could be `string`, `string[]`, `Error`. Another 1 point if we see the literal error message.
 - C typed : 1 point if hovering `resultC.value.id` gives `number`. Remove 0.5 if it's `number | something else`
-- async :  1 point if a utility is provided to handle async functions easily
+- async : 1 point if a utility is provided to handle async functions easily
 - align : 1 point if a utility is provided to align ok and error results, so in the end we can `const { error, value } = anyResult` or `const { ok, error, value } = anyResult`
 
 ## My favorite pick
@@ -108,6 +108,7 @@ Just open an issue or a PR, I'll be happy to discuss it with you <3
 - [FluentTypeResults](https://github.com/JasonLandbridge/FluentTypeResults) : for the library
 - [Github](https://github.com) : for all their great work year after year, pushing OSS forward
 - [Knip](https://github.com/webpro/knip) : super tool to find & fix problems
+- [Oxc](https://oxc.rs) : a lovely super-fast collection of JavaScript tools written in Rust
 - [Repo-checker](https://github.com/Shuunen/repo-checker) : eslint cover /src code and this tool the rest ^^
 - [ResultX](https://github.com/johannschopplich/resultx) : for the library
 - [Shields.io](https://shields.io) : for the nice badges on top of this readme

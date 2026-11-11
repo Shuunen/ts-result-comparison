@@ -1,16 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "alwaysStrict": true,
     "declaration": true,
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "noImplicitAny": true,
     "noImplicitThis": true,
+    "noEmit": true,
     "outDir": "./dist",
+    "rootDir": "./src",
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
@@ -19,12 +20,7 @@
     "types": ["bun"],
     "verbatimModuleSyntax": true
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "exclude": ["node_modules", "dist"],
   "extends": "@tsconfig/strictest/tsconfig.json",
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

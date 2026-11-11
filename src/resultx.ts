@@ -1,7 +1,7 @@
 import { err, ok, trySafe } from 'resultx'
-import { sleep } from './utils'
+import { sleep } from './utils.ts'
 
-function divide (a: number, b: number) {
+function divide(a: number, b: number) {
   if (b === 0) return err('Division by zero')
   return ok(a / b)
 }
@@ -11,10 +11,10 @@ if (resultA.ok) console.assert(resultA.value === 5, 'Result should be 5')
 else console.assert(false, 'Case 1 should not exist', resultA)
 
 const resultB = divide(10, 0)
-if (!resultB.ok) console.assert(typeof resultB.error === 'string', 'Error should be a string')
-else console.assert(false, 'Case 2 should not exist', resultB)
+if (resultB.ok) console.assert(false, 'Case 2 should not exist', resultB)
+else console.assert(typeof resultB.error === 'string', 'Error should be a string')
 
-async function fetchUser (id: number) {
+async function fetchUser(id: number) {
   await sleep(10)
   return { id, name: 'Alice' }
 }

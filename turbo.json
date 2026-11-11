@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "tasks": {
+    "build:app": {
+      "dependsOn": ["lint:install"],
+      "outputs": ["dist/**"]
+    },
+    "check:once": {
+      "dependsOn": ["lint:install", "build:app"]
+    },
+    "lint:format": {
+      "dependsOn": ["lint:install"]
+    },
+    "lint:install": {
+      "inputs": ["package.json", "pnpm-lock.yaml", "pnpm-workspace.yaml"]
+    },
+    "lint:issues": {
+      "dependsOn": ["lint:install"]
+    },
+    "lint:knip": {
+      "dependsOn": ["lint:install"]
+    },
+    "lint:repo": {
+      "dependsOn": ["lint:install", "build:app"],
+      "inputs": ["$TURBO_DEFAULT$", "dist/**"]
+    },
+    "lint:types": {
+      "dependsOn": ["lint:install"]
+    },
+    "test:unit": {
+      "dependsOn": ["lint:install"],
+      "outputs": ["coverage/**"]
+    }
+  }
+}
