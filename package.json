@@ -45,7 +45,6 @@
   },
   "scripts": {
     "bench": "hyperfine \"bun src/resultx.ts\" \"bun src/vanilla-throw.ts\" \"bun src/vanilla-object.ts\" \"bun src/fluent-type-results.ts\" \"bun src/typescript-result.ts\" \"bun src/neverthrow.ts\" \"bun src/byethrow.ts\"",
-    "bench:node": "hyperfine \"node dist/resultx.js\" \"node dist/vanilla-throw.js\" \"node dist/vanilla-object.js\" \"node dist/fluent-type-results.js\" \"node dist/typescript-result.js\" \"node dist/neverthrow.js\" \"node dist/byethrow.js\" && echo bench:node success",
     "build": "turbo run build:app && echo build completed successfully",
     "build:app": "bun scripts/build.ts && echo build:app completed successfully",
     "check": "turbo run --output-logs=errors-only lint:install lint:knip build:app check:once lint:types lint:format lint:issues lint:repo test:unit && echo check completed successfully",

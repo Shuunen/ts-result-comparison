@@ -50,9 +50,7 @@ pnpm bench --runs 1
 pnpm bench --runs 50
 ```
 
-Every script is taking between 79 ms (vanilla-object) and 85 ms (resultx), the difference is so small that it's not worth mentioning in the comparison table.
-
-When running the benchmarks with Node on the built files, the results are even closer, between 163 ms and 164 ms.
+Run with Bun, every script is taking between 147 ms (vanilla-object) and 178 ms (resultx), the difference is mostly the runtime startup and the noise (±10 to 30 ms), so it's not worth mentioning in the comparison table.
 
 ## The comparison results
 
@@ -116,5 +114,9 @@ Just open an issue or a PR, I'll be happy to discuss it with you <3
 - [Typescript Result](https://github.com/everweij/typescript-result) : for the library
 - [V8](https://github.com/demurgos/v8-coverage) : simple & effective cli for code coverage
 - [Vitest](https://github.com/vitest-dev/vitest) : super fast vite-native testing framework
+
+## Archived Node measures
+
+Before the benchmarks moved to Bun only, they were also run with Node on the built files (`node dist/*.js`), the results were even closer, between 163 ms and 164 ms. These numbers are kept for history and are not updated anymore.
 
 ![demo](docs/banner.svg)
