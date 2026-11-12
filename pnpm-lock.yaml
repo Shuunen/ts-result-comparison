@@ -169,9 +169,6 @@ importers:
       '@praha/byethrow':
         specifier: ^0.13.0
         version: 0.13.0(typescript@7.0.2)
-      '@types/bun':
-        specifier: ~1.4.4
-        version: 1.4.4
       fluent-type-results:
         specifier: ~1.0.11
         version: 1.0.11
@@ -188,6 +185,9 @@ importers:
       '@tsconfig/strictest':
         specifier: ~2.0.8
         version: 2.0.8
+      '@types/bun':
+        specifier: ~1.4.4
+        version: 1.4.4
       '@vitest/coverage-v8':
         specifier: ~5.1.0
         version: 5.1.0(vitest@5.1.0)

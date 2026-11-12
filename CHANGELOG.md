@@ -7,3 +7,4 @@ All notable changes to this project are documented here.
 ### Changed
 
 - Add a VS Code colour scheme to tell this project window apart
+- Move `@types/bun` to the dev dependencies

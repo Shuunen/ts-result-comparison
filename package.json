@@ -4,7 +4,6 @@
   "bugs": "https://github.com/Shuunen/ts-result-comparison/issues",
   "dependencies": {
     "@praha/byethrow": "^0.13.0",
-    "@types/bun": "~1.4.4",
     "fluent-type-results": "~1.0.11",
     "neverthrow": "^8.2.0",
     "resultx": "~2.0.2",
@@ -13,6 +12,7 @@
   "description": "Comparison of different TypeScript result pattern libraries",
   "devDependencies": {
     "@tsconfig/strictest": "~2.0.8",
+    "@types/bun": "~1.4.4",
     "@vitest/coverage-v8": "~5.1.0",
     "bun": "~1.4.4",
     "knip": "~6.45.0",
