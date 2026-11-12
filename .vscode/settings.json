@@ -1,3 +1,8 @@
 {
-  "cSpell.words": ["resultx"]
+  "cSpell.words": ["resultx"],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#2A124E",
+    "titleBar.activeBackground": "#3C1A70",
+    "titleBar.activeForeground": "#F9F7FD"
+  }
 }
