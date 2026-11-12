@@ -11,3 +11,4 @@ All notable changes to this project are documented here.
 - Drop the redundant `#readme` from the package homepage
 - Replace the Node benchmark by the Bun one in the README and keep the old Node measures in an archive section
 - Use the `semverAllMonthly` Renovate preset
+- Add a `VERSION` file
