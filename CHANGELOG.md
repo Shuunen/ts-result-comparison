@@ -15,3 +15,4 @@ All notable changes to this project are documented here.
 - Use the dot reporter and silence the test output
 - Use the `semverAllMonthly` Renovate preset
 - Add a `VERSION` file
+- Color the VS Code window from the theme color: title bar, activity bar, status bar, badges and active tab

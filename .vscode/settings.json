@@ -1,8 +1,17 @@
 {
   "cSpell.words": ["resultx"],
   "workbench.colorCustomizations": {
-    "activityBar.background": "#2A124E",
-    "titleBar.activeBackground": "#3C1A70",
-    "titleBar.activeForeground": "#F9F7FD"
+    "activityBar.background": "#190b2e",
+    "activityBar.foreground": "#f9fafb",
+    "activityBarBadge.background": "#3c1a70",
+    "activityBarBadge.foreground": "#f9fafb",
+    "statusBar.background": "#190b2e",
+    "statusBar.foreground": "#f9fafbcc",
+    "statusBar.inactiveBackground": "#10071e",
+    "tab.activeBorderTop": "#3c1a70",
+    "titleBar.activeBackground": "#3c1a70",
+    "titleBar.activeForeground": "#f9fafb",
+    "titleBar.inactiveBackground": "#190b2e",
+    "titleBar.inactiveForeground": "#f9fafbaa"
   }
 }
